@@ -7,8 +7,10 @@ import projectRed from '../template-1/components/compoReducer/projectRed'
 import positionRed from '../template-1/components/compoReducer/positionRed'
 import awardRed from '../template-1/components/compoReducer/awardRed'
 import hobbyRed from '../template-1/components/compoReducer/hobbyRed'
+import imageRed from '../template-1/components/compoReducer/imageRed'
 
 export default combineReducers({
+    imageRed: imageRed,
     personRed: personRed,
     educationRed: educationRed,
     skillRed: skillRed,

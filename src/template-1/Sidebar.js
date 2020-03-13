@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './style/SidebarStyle.css'
 import {Accordion, Card } from 'react-bootstrap'
+import ImageInfo from './components/ImageInfo'
 import PersonalInfo from './components/PersonalInfo'
 import EducationInfo from './components/EducationInfo'
 import SkillsInfo from './components/SkillsInfo'
@@ -15,6 +16,16 @@ class Sidebar extends Component {
         return (
             <div className="sidebar">
                 <Accordion defaultActiveKey=" ">
+                    <Card>
+                        <Accordion.Toggle as={Card.Header} eventKey="0">
+                        Upload Image
+                        </Accordion.Toggle>
+                        <Accordion.Collapse eventKey="0">
+                        <Card.Body>
+                            <ImageInfo />
+                        </Card.Body>
+                        </Accordion.Collapse>
+                    </Card>
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="1">
                         Personal Information
