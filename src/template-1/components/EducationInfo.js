@@ -41,7 +41,7 @@ class EducationInfo extends Component {
         this.props.removeBlock('dummy');
     }
 
-    handleRemoveBlock = (event ,id) => {
+    handleRemoveBlock = (id) => {
         this.props.removeBlock(id);
     }
 
