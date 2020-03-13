@@ -52,7 +52,7 @@ class InternshipInfo extends Component {
         this.props.removeInternshipBlock('dummy');
     }
 
-    handleRemoveInternshipBlock = (event ,id) => {
+    handleRemoveInternshipBlock = (id) => {
         this.props.removeInternshipBlock(id);
     }
 
