@@ -52,7 +52,7 @@ class ProjectInfo extends Component {
         this.props.removeProjectBlock('dummy');
     }
 
-    handleRemoveProjectBlock = (event ,id) => {
+    handleRemoveProjectBlock = (id) => {
         this.props.removeProjectBlock(id);
     }
 
